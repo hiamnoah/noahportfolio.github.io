@@ -12,7 +12,7 @@ html {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-image: url("images/cover3.png");
-  min-height: 75%;
+  min-height: 100%;
 }
 
 .menu {
