@@ -32,6 +32,7 @@
 <link rel="stylesheet" href="style.css">
 
 
+<body >
 <svg width="300" height="120" id="clackers">
   <!-- Left arc path -->
   <svg>
@@ -123,13 +124,15 @@
   </nav>
 
 </head>
-<body >
+<section class="main">
   <!-- Header with image -->
-  <div class="parallax" id="home" ></div>
-  <div class="centered">
-    <h1 style="font-size:3vw;"><b> Hello, <br>  I'm Noah Tran.</b></h1>
-    <br>
-    <p style="font-size:1vw;">Welcome to my online Portfolio.</p></div>
+  <div class="parallax" id="home" >
+    <div class="centered">
+      <h1 style="font-size:3vw;"><b> Hello, <br>  I'm Noah Tran.</b></h1>
+      <br>
+      <p style="font-size:1vw;">Welcome to my online Portfolio.</p>
+    </div>
+  </div>  
     <div class="bgimg w3-display-container w3-grayscale-min" >
 
       <!-- Add a background color and large text to the whole page -->
@@ -325,7 +328,7 @@
         <br>
         <div class="container">
           <div class="gallery">
-            <figure class="gallery__item gallery__item--1">
+            <figure class="gallery__item gallery__item--1" data-toggle="modal" data-target="#modal1">
               <img src="images/Gogreen.jpg" alt="Gallery image 1" class="gallery__img">
             </figure>
             <figure class="gallery__item gallery__item--2">
@@ -361,7 +364,6 @@
 </div>
 </div>
 <section class="s-contact target-section" id="third">
-
   <div class="w3-content" style="max-width:900px">
     <h2 style="text-align: center; color: white"><b>Contact</b></h2>
     <h2 class="w3-center w3-padding-60"><span class="w3-tag w3-wide" style="background-color: #9b9092;"> Say "Xin chao" </span></h2>
@@ -415,48 +417,6 @@
 </div>
 
 <!-- Footer -->
-<style>
-
-
-  .footer {
-    position: absolute;
-    right: 0;
-    bottom: auto;
-    left: 0;
-    padding: 2rem;
-    background-color: #3f3f3f;
-    text-align: center;
-  }
-  .fa {
-    padding: 10px;
-    font-size: 20px;
-    width: 40px;
-    text-align: center;
-    text-decoration: none;
-    margin: 1px 1px;
-    border-radius: 50%;
-  }
-
-  .fa:hover {
-    opacity: 0.7;
-  }
-
-  .fa-facebook {
-    background: #b2b2b2;
-    color: white;
-  }
-
-  .fa-google {
-    background: #b2b2b2;
-    color: white;
-  }
-
-  .fa-instagram {
-    background: #b2b2b2;
-    color: white;
-  }
-</style>
-
 <div class="footer">
 
 
@@ -474,6 +434,7 @@
 
 </div>
 </section>
+
 <script>
 // Tabbed Menu
 function openMenu(evt, menuName) {
@@ -492,5 +453,27 @@ function openMenu(evt, menuName) {
 document.getElementById("myLink").click();
 </script>
 
+<!-- Modals -->
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1CenterTitle" aria-hidden="true">
+  <div class="modal-dialog custom-modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal1Title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- đút content vào đây -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> 
+</section>
 </body>
+
 </html>
