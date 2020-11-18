@@ -322,3 +322,7 @@ ul.timeline > li:before {
 .custom-modal-dialog {
   max-width: 1000px;
 }
+
+.custom-modal-body {
+  text-align: center;
+}
