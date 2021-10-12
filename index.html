@@ -101,21 +101,36 @@
       </a>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#home" style="margin-right: 30px; color:#e6c0a8"><b> Home </b></a>
+          <a class="nav-link nav-link--normal nav-link--active" href="#home" > Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#first" style="margin-right: 30px; color:#9b9092">About</a>
+          <a class="nav-link nav-link--normal" href="#first" >About</a>
         </li>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#second" style="margin-right: 30px; color:#9b9092">Projects</a>
+        <a class="nav-link nav-link--normal" href="#second" >Projects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#third" style="margin-right: 40px;  color:#9b9092">Contact</a>
+        <a class="nav-link nav-link--normal" href="#third" >Contact</a>
       </li>
       
       
+      <script type="text/javascript">
+        let navLinks = document.querySelectorAll(".nav-link.nav-link--normal");
 
+        navLinks.forEach((navLink, index) => {
+
+          navLink.onclick = function(){
+            let modifierItem = document.querySelector(".nav-link.nav-link--normal.nav-link--active");
+            
+            /*Remove format for others previous options when click new option*/
+            modifierItem.classList.remove("nav-link--active");
+
+            /*Add class to format new color, font-weight for new option that you have just clicked*/
+            this.classList.add("nav-link--active");
+          }
+        })
+      </script>
     </ul>
   </nav>
 
