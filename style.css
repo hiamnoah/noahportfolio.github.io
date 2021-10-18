@@ -261,7 +261,7 @@ ul.timeline > li:before {
   background-color: #ccaa97;
   color: white;
 }
-.s-contact {
+.full-width {
   background-color: #151515;
   background-image: url("images/cover2.jpg");
   background-size: cover;
@@ -271,6 +271,7 @@ ul.timeline > li:before {
   padding-bottom: 11rem;
   color: rgba(255, 255, 255, 0.5);
   position: relative;
+  width: 100%;
 }
 .s-contact .overlay {
   position: absolute;

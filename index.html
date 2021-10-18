@@ -100,44 +100,26 @@
         <img src="images\logo.png" alt="logo" style="width:60px; margin-left: 20px ">
       </a>
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link nav-link--normal nav-link--active" href="#home" > Home</a>
+        <li class="home nav-item">
+          <a class="home nav-link nav-link--normal nav-link--active" href="#home" > Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link nav-link--normal" href="#first" >About</a>
+        <li class="about nav-item">
+          <a class="about nav-link nav-link--normal" href="#first" >About</a>
         </li>
       </li>
-      <li class="nav-item">
-        <a class="nav-link nav-link--normal" href="#second" >Projects</a>
+      <li class="projects nav-item">
+        <a class="projects nav-link nav-link--normal" href="#second" >Projects</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link nav-link--normal" href="#third" >Contact</a>
+      <li class="inform nav-item">
+        <a class="inform nav-link nav-link--normal" href="#inform" >Contact</a>
       </li>
-      
-      
-      <script type="text/javascript">
-        let navLinks = document.querySelectorAll(".nav-link.nav-link--normal");
-
-        navLinks.forEach((navLink, index) => {
-
-          navLink.onclick = function(){
-            let modifierItem = document.querySelector(".nav-link.nav-link--normal.nav-link--active");
-            
-            /*Remove format for others previous options when click new option*/
-            modifierItem.classList.remove("nav-link--active");
-
-            /*Add class to format new color, font-weight for new option that you have just clicked*/
-            this.classList.add("nav-link--active");
-          }
-        })
-      </script>
     </ul>
   </nav>
 
 </head>
 <section class="main">
   <!-- Header with image -->
-  <div class="parallax" id="home" >
+  <div class="parallax w3-content" id="home" >
     <div class="centered">
       <h1 style="font-size:3vw;"><b> Hello, <br>  I'm Noah Tran.</b></h1>
       <br>
@@ -157,7 +139,7 @@
 
         <!-- About Container -->
         <div class="w3-container" >
-          <div class="w3-content" style="max-width:900px">
+          <div class="w3-content"  id="about" style="max-width:900px">
             <h2 style="text-align: center; color: #9B7C70"><b>About me</b></h2>
             <h2 class="w3-center w3-padding-60"><span class="w3-tag w3-wide" style="background-color: #9b9092;"> MY DESIRE </span></h2>
             <br>
@@ -331,7 +313,7 @@
     <br>
     <br>
     <div class="w3-container" >
-      <div class="w3-content" style="max-width:900px">
+      <div class="w3-content"  id="projects" style="max-width:900px">
         <h2 style="text-align: center; color: #e6c0a8"><b>Projects</b></h2>
         <h2 class="w3-center w3-padding-60"><span class="w3-tag w3-wide" style="background-color: #9b9092;"> MY LATEST PROJECTS </span></h2>
         <br>
@@ -372,57 +354,59 @@
       </div>
     </div>
   </div>
-</div>
-</div>
-<section class="s-contact target-section" id="third">
-  <div class="w3-content" style="max-width:900px">
-    <h2 style="text-align: center; color: white"><b>Contact</b></h2>
-    <h2 class="w3-center w3-padding-60"><span class="w3-tag w3-wide" style="background-color: #9b9092;"> Say "Xin chao" </span></h2>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="row">
-      <div class="col-lg-6 tab-full left">
-        <h3>PHONE</h3>
-        <p style="font-size: 15px; color: white">(+84) 339568068</p>
-      <br>
-      <br>
-      
-        <h3>EMAIL</h3>
-        <p style="font-size: 15px; color: white;">hiamnoah98@gmail.com <br> hoantpha130188@fpt.edu.vn</p>
-        <br>
-      <br>
-      
-        <h3>ADDRESS</h3>
-        <p style="font-size: 15px; color: white;">33 Vinh Ho <br> Dong Da, Hanoi <br> Vietnam </p>
-        <br>
-      <br>
-      
-        <h3>SOCIAL</h3>
-        <p style="font-size: 15px; color: white;">facebook.com/tun.thoi <br> instagram.com/tphuchoan  </p>
 
-      </div>
-      <div class="col-lg-6 tab-full left">
+  <div class="full-width w3-content"  id="inform"  style="background-color: #626262;">
+    <div class="s-contact target-section"style="max-width:900px">
+      <h2 style="text-align: center; color: white"><b>Contact</b></h2>
+      <h2 class="w3-center w3-padding-60"><span class="w3-tag w3-wide" style="background-color: #9b9092;"> Say "Xin chao" </span></h2>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-lg-6 tab-full left">
+          <h3>PHONE</h3>
+          <p style="font-size: 15px; color: white">(+84) 339568068</p>
         <br>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <h3 style="text-align: justify;"><i>"Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it."</i></h3>
-        <br>
-        <p style="font-size: 15px">- Steve Jobs</p>
         
+          <h3>EMAIL</h3>
+          <p style="font-size: 15px; color: white;">hiamnoah98@gmail.com <br> hoantpha130188@fpt.edu.vn</p>
+          <br>
+        <br>
+        
+          <h3>ADDRESS</h3>
+          <p style="font-size: 15px; color: white;">33 Vinh Ho <br> Dong Da, Hanoi <br> Vietnam </p>
+          <br>
+        <br>
+        
+          <h3>SOCIAL</h3>
+          <p style="font-size: 15px; color: white;">facebook.com/tun.thoi <br> instagram.com/tphuchoan  </p>
+  
+        </div>
+        <div class="col-lg-6 tab-full left">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+  
+          <h3 style="text-align: justify;"><i>"Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it."</i></h3>
+          <br>
+          <p style="font-size: 15px">- Steve Jobs</p>
+          
+        </div>
       </div>
     </div>
-  </div>
     
+  </div>
+</div>
 
-  </section>
+</div>
+
 
 </div>
 </div>
@@ -597,6 +581,59 @@ document.getElementById("myLink").click();
 </div> 
 
 </section>
+
+<script type="text/javascript">
+  let contentDivs = document.querySelectorAll(".w3-content");
+  let mainDiv = document.querySelector(".main");
+  let navLinks = document.querySelectorAll(".nav-link.nav-link--normal");
+  let navItems = document.querySelectorAll(".navbar-nav li")
+  
+  for(let i = 0; i < contentDivs.length; i++){
+    console.log(contentDivs[i].getAttribute('id'));
+  }
+
+  for(let j = 0; j < contentDivs.length; j++){
+    console.log(navItems[j]);
+  }
+
+  mainDiv.onscroll = function() {
+    // console.log(alo.scrollTop);
+    console.log("Current scroll postion: "+ mainDiv.scrollTop);
+    console.log("Current scroll offset: "+ mainDiv.offsetTop);
+    let current = '';
+
+    contentDivs.forEach(contentDiv => {
+        const contentOffsetTop  = contentDiv.offsetTop;
+        const contentHeight = contentDiv.clientHeight;
+        console.log("offsetTop: " + contentOffsetTop);
+        // console.log("pageYOffset: " + pageYOffset);
+
+        if (mainDiv.scrollTop >= (contentOffsetTop - contentHeight/3)){
+          current = contentDiv.getAttribute('id');
+        }
+    })
+
+    console.log(current);
+    navLinks.forEach((navLink, index) => {
+        /*Remove format for others previous options when click new option*/
+        if (navLink.classList.contains("nav-link--active"))
+        {
+          navLink.classList.remove("nav-link--active");
+        }
+
+        if(navLink.classList.contains(current)){
+        /*Add class to format new color, font-weight for new option that you have just clicked*/
+          navLinks[index].classList.add("nav-link--active"); 
+        }
+    })
+    
+  }
+
+  
+
+  
+
+</script>
 </body>
 
 </html>
